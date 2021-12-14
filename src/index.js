@@ -86,7 +86,7 @@ app.get('/cancel-payment', (req, res) => {
 
 console.log(COINBASE_API_KEY, COINBASE_WEBHOOK_SECRET, DOMAIN);
 
-
-app.listen(3000);
-console.log("Server on port", 3000);
+const PORT = process.env.PORT || 3000
+app.listen(PORT);
+console.log("Server on port", PORT);
 
